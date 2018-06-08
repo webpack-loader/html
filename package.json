@@ -1,0 +1,42 @@
+{
+  "name": "@webpack-loaders/html",
+  "version": "1.0.0",
+  "description": "HTML Loader",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "clean": "del-cli dist",
+    "lint": "standard --env jest",
+    "test": "jest --verbose --coverage",
+    "release": "commitlint --to 'HEAD' && standard-version"
+  },
+  "dependencies": {
+    "@webpack-utilities/loader": "^1.0.0",
+    "@webpack-utilities/schema": "^1.0.0",
+    "@posthtml/esm": "^1.0.0",
+    "htmlnano": "^0.1.0",
+    "posthtml": "^0.11.0",
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.0",
+    "@webpack-utilities/test": "^1.0.0",
+    "del": "^3.0.0",
+    "del-cli": "^1.0.0",
+    "file-loader": "^1.0.0",
+    "jest": "^23.0.0",
+    "jsdom": "^11.0.0",
+    "standard-version": "^4.0.0",
+    "webpack": "^4.0.0"
+  },
+  "bugs": "https://github.com/webpack-contrib/html-loader/issues",
+  "homepage": "https://github.com/webpack-contrib/html-loader",
+  "repository": "https://github.com/webpack-contrib/html-loader", 
+  "author": "Michael Ciniawsky (@michael-ciniawsky) <michael.ciniawsky@gmail.com>",
+  "license": "MIT"
+}

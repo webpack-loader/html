@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Defaults 1`] = `
+"// HTML Imports
+import HTML__URL__0 from './file.png';
+import HTML__IMPORT__0 from './file.html';
+
+
+// HTML
+export default \`<!DOCTYPE html>
+<html lang=\\"en\\">
+<head>
+  <meta charset=\\"utf-8\\">
+  <title>HTML Loader</title>
+</head>
+<body>
+  <div id=\\"app\\"></div>
+
+  <!-- HTML Import -->
+  \${HTML__IMPORT__0}
+
+  <!-- HTML URL -->
+  <img src=\\"\${HTML__URL__0}\\">
+</body>
+</html>
+\`"
+`;
